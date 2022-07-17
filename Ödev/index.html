@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: pink;
+        align-items: center;
+        height: 50px;
+        padding: 0 20px;
+      }
+      .headerLink {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-right: 13px;
+      }
+
+      .imgMainDiv {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px 0;
+      }
+
+      /*imgDiv*/
+      .imgDiv {
+        border: 1px dashed black;
+        width: 200px;
+        border-radius: 30px;
+        margin-right: 30px;
+        height: 27rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .imgDiv > img {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+      }
+      .imgDiv h3 {
+        text-align: center;
+      }
+      .imgDiv p {
+        padding: 0 20px;
+      }
+      .imgDiv h3 {
+        color: crimson;
+      }
+      .price {
+        color: crimson;
+        font-size: large;
+      }
+      .imgDiv > button {
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgb(0, 185, 0);
+        padding: 8px 0px;
+        width: 85px;
+        margin-bottom: 20px;
+        border: none;
+      }
+      /*imgDiv*/
+      /*Footer*/
+      .footer {
+        background-color: pink;
+        color: black;
+        display: flex;
+        align-items: center;
+        height: 7rem;
+        justify-content: space-around;
+      }
+
+      .footer > ul > li {
+        color: black;
+        margin: 0.7rem 0;
+      }
+      .footer > ul > li > a {
+        text-decoration: none;
+      }
+      .footer > ul {
+        list-style: none;
+      }
+
+      /*Footer*/
+      @media only screen and (max-width: 600px) {
+        .imgMainDiv {
+          flex-direction: column;
+          background-size: cover;
+          color: black;
+        }
+        .imgDiv {
+          border: 1px solid black;
+          width: 100% !important;
+          border-radius: 30px;
+          margin-right: 30px;
+          margin-bottom: 20px;
+          margin-inline: 0 !important;
+        }
+        .imgDiv > img {
+          width: 60%;
+        }
+        .formGeneral {
+          margin: 0;
+        }
+      }
+      @media only screen and (max-width: 770px) {
+        .imgDiv > img {
+          width: 30%;
+        }
+        .imgDiv {
+          border: 1px solid black;
+          width: 46%;
+          border-radius: 30px;
+          margin-bottom: 20px;
+          margin-inline: 10px;
+        }
+        .imgMainDiv {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div><img src="./8-Images/burgerlogo.png" alt="header" width="70" /></div>
+      <div>
+        <a class="headerLink" href="#">Home</a>
+        <a class="headerLink" href="#">About</a>
+        <a class="headerLink" href="#">Contact</a>
+      </div>
+    </div>
+    <div
+      class="imgMainDiv"
+      style="background-image: url(banner.jpg); height: 400px"
+    >
+      <div
+        style="position: absolute; top: 130px; text-align: center; width: 100%"
+      >
+        <h3 style="mask-image: url(banner.jpg)">EFSANE BANNER</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          consequatur praesentium dolor ea recusandae quas labore at quod, est
+          nihil, tempora a. Itaque, sequi quidem. Quo repellat neque voluptates
+          laboriosam. Ea inventore adipisci molestias similique quibusdam
+          impedit officia dignissimos reiciendis rerum. Nemo excepturi ipsum
+          doloribus, dolor molestiae, ipsam culpa libero asperiores voluptatum,
+          doloremque ad natus fugit. Voluptas reprehenderit quis excepturi!
+        </p>
+      </div>
+    </div>
+    <div class="imgMainDiv">
+      <div class="imgDiv">
+        <img class="efso" src="./8-Images/burger.jpg" alt="1image" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <p class="price">45.99 <i>TL</i></p>
+        <button>Satın Al</button>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="./8-Images/burger.jpg" alt="1image" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <p class="price">45.99 <i>TL</i></p>
+        <button>Satın Al</button>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="./8-Images/burger.jpg" alt="1image" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <p class="price">45.99 <i>TL</i></p>
+        <button>Satın Al</button>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="./8-Images/burger.jpg" alt="1image" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <p class="price">45.99 <i>TL</i></p>
+        <button>Satın Al</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+      <img src="./8-Images/burgerlogo.png" width="100" alt="burgerLogo" />
+      <ul>
+        <li><a href="#">Burgerlar</a></li>
+        <li><a href="#">Restaurantlar</a></li>
+        <li><a href="#">Kariyer</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
