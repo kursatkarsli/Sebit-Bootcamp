@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>İllaki Burada</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-body">
+      <div class="container-fluid">
+        <div class="col-2">
+          <a class="navbar-brand" href="#"
+            ><img src="/assets/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="col-sm-8 col-md-1 col-lg-1">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse m-md-0 m-sm-5"
+          id="navbarSupportedContent"
+        >
+          <div class="row w-100">
+            <div class="col-md-5">
+              <form class="d-flex" role="search">
+                <div class="input-group position-relative">
+                  <input
+                    type="text"
+                    class="form-control rounded"
+                    placeholder="Kelime, ilan no yada mağaza adı ile ara."
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                  <div
+                    class="position-absolute m-auto"
+                    style="left: 93%; top: 5px"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline me-2">
+                    Giriş yap
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-outline">
+                    Kayıt ol
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Content -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 p-5">
+          <div class="row">
+            <button
+              type="button"
+              class="btn btn-ilan d-flex align-items-center"
+            >
+              <i class="fa-solid fa-plus me-3"></i> Ücretsiz İlan Oluştur
+            </button>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item border-0 mt-3 mb-1">
+                <img src="/assets/clock.png" alt="acil ilanlar" class="" />
+                Acil İlanlar
+              </li>
+
+              <li class="list-group-item border-0 my-1">
+                <img src="/assets/arrow.png" alt="acil ilanlar" class="" />
+                Fiyatı Düşenler
+              </li>
+              <li class="list-group-item border-0 my-1">
+                <img
+                  src="/assets/new-product.png"
+                  alt="acil ilanlar"
+                  class=""
+                />
+                Tüm vitrin ilanları
+              </li>
+              <li class="list-group-item border-0 my-1">
+                <img src="/assets/price-tags.png" alt="acil ilanlar" class="" />
+                Tüm Get ilanları
+              </li>
+              <li class="list-group-item border-0 my-1">
+                <img
+                  src="/assets/shopping-bag.png"
+                  alt="acil ilanlar"
+                  class=""
+                />
+                Tüm Mağazalar
+              </li>
+              <li class="list-group-item m-0"></li>
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample"
+                >
+                  <img src="/assets/home.png" alt="acil ilanlar" class="" />
+                  Emlak
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item m-0"></li>
+
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample1"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample1"
+                >
+                  <img src="/assets/car.png" alt="acil ilanlar" class="" />
+                  Motorlu Taşıtlar
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample1"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item m-0"></li>
+
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample2"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample2"
+                >
+                  <img src="/assets/settings.png" alt="acil ilanlar" class="" />
+                  Yedek Parça, Aksesuar & Tuning
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample2"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item m-0"></li>
+
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample3"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample3"
+                >
+                  <img
+                    src="/assets/shopping-bag 2.png"
+                    alt="acil ilanlar"
+                    class=""
+                  />
+                  İkinci El ve Sıfır Alışveriş
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample3"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item m-0"></li>
+
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample4"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample4"
+                >
+                  <img src="/assets/tracking.png" alt="acil ilanlar" class="" />
+                  İş Makineleri & Sanayi
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample4"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item m-0"></li>
+
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample5"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample5"
+                >
+                  <img src="/assets/people.png" alt="acil ilanlar" class="" />
+                  Ustalar ve Hizmetler
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample5"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item m-0"></li>
+
+              <li class="list-group-item border-0 my-1">
+                <button
+                  class="btn btn-outline border-0 text-dark p-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample6"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample6"
+                >
+                  <img src="/assets/book.png" alt="acil ilanlar" class="" />
+                  Eğitim
+                </button>
+                <div>
+                  <div
+                    class="collapse collapse-horizontal"
+                    id="collapseWidthExample6"
+                  >
+                    <div class="card card-body border-0" style="width: 300px">
+                      toggle
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ÜRÜNLER -->
+        <div class="col-md-9 px-5 py-3">
+          <div class="row">
+            <div
+              id="carouselExampleControls"
+              class="carousel carousel-dark slide"
+              data-bs-ride="false"
+              ride="true"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- Carousel 1 -->
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h3>Vitrin İlanları <i class="fa-solid fa-pencil"></i></h3>
+            </div>
+            <hr />
+            <div class="col-md-12">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg" >
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel 1 -->
+          <!-- Carousel 2 -->
+
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h3>Son yüklenen İlanlar <i class="fa-solid fa-pencil"></i></h3>
+            </div>
+            <hr />
+            <div class="col-md-12">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel 2 -->
+          <!-- Carousel 3 -->
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h3>Vitrin İlanları <i class="fa-solid fa-pencil"></i></h3>
+            </div>
+            <hr />
+            <div class="col-md-12">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658778176925-e0027cd4259a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card shadow-lg">
+                          <img
+                            src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel 3-->
+          <!-- ALBUM -->
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6">
+                      <h3>Mağazalar</h3>
+                    </div>
+                    <div class="col-6 text-end">
+                      <div class="row">
+                        <div class="col-12">
+                          <span
+                            style="
+                              border-bottom: 1px solid orange;
+                              padding-bottom: 10px;
+                            "
+                            ><i
+                              class="fa-solid fa-angle-right me-2"
+                              style="color: orange"
+                            ></i
+                            >Tüm Mağazalar</span
+                          >
+                        </div>
+                        <div class="col-12">
+                          <hr
+                            class="float-end opacity-100"
+                            style="color: orange; width: 30%"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                 <img src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 mt-1">
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                 <img src="https://images.unsplash.com/photo-1658763244896-d70c2d324d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ALBUM -->
+        </div>
+
+        <!-- ÜRÜNLER -->
+      </div>
+    </div>
+    <!-- Footer -->
+ 
+    
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-4"><img src="assets/logo.png" alt="" style="width: 42rem;">  </div>  
+        <ul class="nav col-md-4  list-unstyled d-flex align-items-center">
+          
+          <li class="ms-3"><i class="fa-brands fa-facebook-f social"></i></a></li>
+          <li class="ms-3"><i class="fa-brands fa-twitter social"></i></li>
+          <li class="ms-3"><i class="fa-brands fa-instagram social"></i></li>
+          <li class="ms-5 ">        <a href="mailto:iletişim@illakiburada.com" class="text-decoration-none text-dark">iletişim@illakiburada.com</a>
+          </li>
+
+        </ul>
+      
+    
+        <ul class="nav col-md-4 justify-content-end">
+      
+          <li class="ms-3">     <img src="assets/appstore.png" width="100" alt="" class="social-button">
+          </li>
+          <li class="ms-3">      <img src="assets/google.png" width="100" alt="" class="social-button">
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="container">
+      <footer >
+        <div class="row ps-5">
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Biz Kimiz?</h5>
+            <ul class="nav flex-column ">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hakkımızda</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Misyonumuz & Vizyonumuz</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Neden Bizimle Çalışmalısın</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İnsan Kaynakları</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İletişim</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Bireysel üyelik</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Bireysel üyelik Hakkında</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İlan verme uralları</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Bireysel üyelik paketleri</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Üyelik Paketi</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Kurumsal Üyelik</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kurumsal hizmetler</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mağaza açma şartları</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kurumsal mağaza paketleri</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nasıl mağaza açabilirim</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <h5>İllaki burada Kurumsal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Güvenli alışveriş ipuçları</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İşlem rehberi</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İptal ve iade</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kişisel verilerin korunması kanunu</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mesafeli satıs sözlesmesi
+                Gizlilik politikaları</a></li>
+            </ul>
+          </div>
+       
+    
+        
+      </footer>
+    </div>
+        <!-- Footer -->
+
+    <!-- Content -->
+  </body>
+</html>
