@@ -1,6 +1,13 @@
-@media screen and (min-width:911) {
+@media screen and (max-width:911) {
     .nav-form {
         display: none;
+    }
+
+}
+
+@media screen and (max-width:750) {
+    .container-fluid {
+        width: 100vh !important;
     }
 
 }
