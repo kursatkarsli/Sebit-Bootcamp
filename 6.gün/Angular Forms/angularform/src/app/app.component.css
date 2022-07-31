@@ -1,0 +1,41 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-toolbar>a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mat-card {
+  max-width: 400px;
+  justify-content: center;
+  padding: 3rem;
+
+}
+
+.mat-card-header {
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}

@@ -1,0 +1,27 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-toolbar>a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mat-card {
+  max-width: 400px;
+  justify-content: center;
+  padding: 3rem;
+
+}
+
+.mat-card-header {
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
