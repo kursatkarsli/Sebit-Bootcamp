@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="my-4 row">
+    <h1>Blog Sitesi</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perferendis
+      asperiores iure eaque adipisci quo dolores vel exercitationem odit
+      nesciunt.
+    </p>
+  </div>
+  <div class="my-5 row">
+    <div
+      class="col-lg-3 col-sm-6 my-4"
+      *ngFor="
+        let item of blogPosts | slice: (page - 1) * pageSize:page * pageSize
+      "
+    >
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title class="content-title">{{
+            item.title
+          }}</mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="assets/images/image{{ item.imageId }}.jpg"
+          alt="Photo of a Shiba Inu"
+        />
+        <mat-card-content>
+          <p class="content-body">
+            {{ item.body }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="openDialog(item, false)"
+          >
+            Görüntüle
+          </button>
+          <button
+            mat-raised-button
+            color="accent"
+            (click)="openDialog(item, true)"
+          >
+            Düzenle
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<div class="pagination">
+  <ngb-pagination
+    [(page)]="page"
+    [pageSize]="pageSize"
+    [collectionSize]="blogPosts.length"
+  ></ngb-pagination>
+</div>
+<h2 mat-dialog-title>Install Angular</h2>

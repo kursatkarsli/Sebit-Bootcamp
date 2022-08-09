@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="isim"><b>İsim</b></label>
+        <br />
+        <input
+          type="text"
+          class="form-control"
+          name="isim"
+          (input)="OnNameChange($event)"
+        />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label
+        ><b>{{ name | titlecase }}</b></label
+      >
+      <br />
+      <label
+        ><b>{{ name | uppercase }}</b></label
+      >
+      <br />
+      <label
+        ><b>{{ name | lowercase }}</b></label
+      >
+    </div>
+    <br />
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="isim"><b>Tarih</b></label>
+        <br />
+        <input
+          type="date"
+          class="form-control"
+          name="isim"
+          (input)="OnDateChange($event)"
+        />
+      </div>
+      <div class="col-md-6">
+        <label
+          ><b>{{ date | date: "longDate" }}</b></label
+        >
+        <br />
+        <label
+          ><b>{{ date | date: "fullDate" }}</b></label
+        >
+        <br />
+        <label
+          ><b>{{ date | date: "long" }}</b></label
+        >
+      </div>
+    </div>
+  </div>
+</div>
